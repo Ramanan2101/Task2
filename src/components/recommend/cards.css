@@ -23,7 +23,7 @@ h3{
 }
 .card{
     border: 1px solid transparent;
-    box-shadow: 5px 5px 30px gray;
+    box-shadow: 1px 1px 8px rgb(223, 208, 208);
     border-radius: 10px;
     height: auto;
     width: 321px;
@@ -57,18 +57,9 @@ h3{
     transition: 0.5s ease-in-out;
 }
 
-
-@media (max-width:430px){
-    h3{
-        font-size: 28px;
-        letter-spacing: 0;
-    }
-}
-
-@media (max-width:780px){
-    .card-top{
-        display: flex;
-        flex-direction: column;
+@media (max-width:1450px){
+    .card{
+        margin: 1rem 1rem;
     }
 }
 
@@ -80,8 +71,31 @@ h3{
     }
 }
 
-@media (max-width:1450px){
+@media (max-width:780px){
+    .card-top{
+        display: flex;
+        flex-direction: column;
+    }
     .card{
-        margin: 1rem 1rem;
+        width: 315px;
+    }
+}
+
+@media (max-width:430px){
+    h3{
+        font-size: 28px;
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width:380px){
+    .card{
+        width: 300px;
+    }
+}
+
+@media (max-width:330px){
+    .card{
+        width: 280px;
     }
 }
